@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#19141A"
+    tools:context=".task_management.AddNewTask">
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingVertical="10dp"
+        android:background="@drawable/habittracker_background_purple"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:fontFamily="@font/fugaz_one"
+            android:textColor="@color/defaultTextColor"
+            android:textSize="20sp"
+            android:text="Habit Tracker" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_gravity="fill_vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="24dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal|fill_vertical"
+            android:paddingVertical="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/default_habittracker_rounded_box"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_marginVertical="10dp"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add your new task here..."
+                    android:fontFamily="@font/golos_text"
+                    android:textSize="20sp"
+                    android:textColor="@color/defaultTextColor"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add your new task here..."
+                    android:fontFamily="@font/golos_text"
+                    android:textStyle="italic"
+                    android:id="@+id/tvRandomQuote"
+                    android:layout_marginVertical="20dp"
+                    android:textSize="16sp"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/defaultTextColor"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="4dp"
+                    android:hint="Task name" >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/tvTaskName"
+                        android:fontFamily="@font/golos_text"
+                        android:textColor="@color/defaultBackgroundColor"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/default_habittracker_textfield_background"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="4dp"
+                    android:hint="Task frequency" >
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:id="@+id/spinnerTaskFrequency"
+                        android:fontFamily="@font/golos_text"
+                        android:textColor="@color/defaultBackgroundColor"
+                        android:background="@drawable/default_habittracker_textfield_background"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/btnSelectStartTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFFFFF"
+                    android:layout_marginVertical="4dp"
+                    android:fontFamily="@font/golos_text"
+                    android:text="Select start time"
+                    android:textAlignment="textStart"
+                    android:textColor="#101010"
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/round_access_time_24"
+                    app:iconGravity="textStart"
+                    app:iconPadding="10dp"
+                    app:iconSize="30dp"
+                    app:iconTint="#191919"
+                    app:strokeColor="#4D204C"
+                    app:strokeWidth="2dp" />
+                <Button
+                    android:id="@+id/btnSelectEndTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFFFFF"
+                    android:layout_marginVertical="4dp"
+                    android:fontFamily="@font/golos_text"
+                    android:text="Select end time"
+                    android:textAlignment="textStart"
+                    android:textColor="#101010"
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/round_access_time_24"
+                    app:iconGravity="textStart"
+                    app:iconPadding="10dp"
+                    app:iconSize="30dp"
+                    app:iconTint="#191919"
+                    app:strokeColor="#4D204C"
+                    app:strokeWidth="2dp" />
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/golos_text"
+                android:drawableStart="@drawable/round_add_task_24"
+                android:drawableTint="@color/defaultTextColor"
+                android:textSize="20sp"
+                android:id="@+id/btnSave"
+                android:paddingVertical="10dp"
+                android:textColor="@color/defaultBackgroundColor"
+                android:text="Save"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

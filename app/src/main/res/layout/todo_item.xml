@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_marginVertical="10dp"
+    android:layout_height="100dp">
+    <LinearLayout
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:background="@color/defaultTextColor"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/habittracker_background_purple">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="5">
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/tvTaskName"
+                android:layout_height="wrap_content"
+                android:text="Make my bed"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/golos_text"
+                android:textSize="24sp"
+                android:textColor="@color/defaultTextColor"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/tvTaskFrequency"
+                android:layout_height="wrap_content"
+                android:text="Daily"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/golos_text"
+                android:textSize="16sp"
+                android:textColor="@color/defaultTextColor"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/tvTaskTime"
+                android:layout_height="wrap_content"
+                android:text="6:00 am - 6:10 am"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/golos_text"
+                android:textSize="16sp"
+                android:textColor="@color/defaultTextColor"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:id="@+id/linearLayoutCheckBoxContainer"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_weight="1">
+            <CheckBox
+                android:layout_width="100dp"
+                android:id="@+id/cbMarkDone"
+                android:layout_height="100dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

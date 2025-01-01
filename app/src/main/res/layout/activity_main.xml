@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#19141A"
+    tools:context=".LoginActivity">
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingVertical="10dp"
+        android:background="@drawable/habittracker_background_purple"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:fontFamily="@font/fugaz_one"
+            android:textColor="@color/defaultTextColor"
+            android:textSize="20sp"
+            android:text="Habit Tracker" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingVertical="10dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/doppio_one_offline"
+                android:text="Welcome!"
+                android:layout_marginBottom="4dp"
+                android:textColor="@color/defaultTextColor"
+                android:textSize="32sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/golos_text"
+
+                android:text="Login to continue."
+                android:textColor="@color/defaultTextColor"
+                android:textSize="16sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="80dp"
+                app:startIconDrawable="@drawable/round_person_outline_24"
+                android:hint="Username" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/tvUsername"
+                    android:fontFamily="@font/golos_text"
+                    android:textColor="@color/defaultBackgroundColor"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/default_habittracker_textfield_background"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                app:startIconDrawable="@drawable/baseline_lock_24"
+                app:passwordToggleEnabled="true"
+                android:hint="Password" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/tvPassword"
+                    android:fontFamily="@font/golos_text"
+                    android:textColor="@color/defaultBackgroundColor"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:background="@drawable/default_habittracker_textfield_background"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/golos_text"
+                android:textSize="20sp"
+                android:id="@+id/btnLogin"
+                android:paddingVertical="10dp"
+                android:layout_marginHorizontal="60dp"
+                android:textColor="@color/defaultBackgroundColor"
+                android:text="Login"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="80dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/golos_text"
+                android:text="Don't have an account?"
+                android:textColor="@color/defaultTextColor"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/golos_text"
+                android:id="@+id/tvCreateAccount"
+                android:text="Click here!"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

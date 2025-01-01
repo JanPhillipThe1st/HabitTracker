@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "822318660881",
+    "project_id": "para-passenger",
+    "storage_bucket": "para-passenger.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:822318660881:android:6f71e98ccfc515812620b0",
+        "android_client_info": {
+          "package_name": "com.yamatoapps.habittracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRClBqMg6Wnp2Xa8o7UUDc3UohLfqWZ0o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

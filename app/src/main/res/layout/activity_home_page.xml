@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#19141A"
+    tools:context=".HomePage">
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingVertical="10dp"
+        android:background="@drawable/habittracker_background_purple"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:fontFamily="@font/fugaz_one"
+            android:textColor="@color/defaultTextColor"
+            android:textSize="20sp"
+            android:text="Habit Tracker" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_gravity="fill_vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal|fill_vertical"
+            android:paddingVertical="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/default_habittracker_rounded_box"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginVertical="10dp"
+                android:padding="20dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civProfileImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:src="@drawable/man"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="10dp"
+                    android:id="@+id/tvUserWelcomeText"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome, "
+                    android:fontFamily="@font/doppio_one_offline"
+                    android:textSize="24sp"
+                    android:textColor="@color/defaultTextColor"/>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:background="@drawable/default_habittracker_rounded_box"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginVertical="10dp"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your tasks for today"
+                android:fontFamily="@font/golos_text"
+                android:textSize="20sp"
+                android:textColor="@color/defaultTextColor"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvTodoItems"
+                    android:layout_weight="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+        </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/golos_text"
+                android:drawableStart="@drawable/round_add_task_24"
+                android:drawableTint="@color/defaultTextColor"
+                android:textSize="20sp"
+                android:id="@+id/btnAddItem"
+                android:paddingVertical="10dp"
+                android:textColor="@color/defaultBackgroundColor"
+                android:text="Add new Item"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
